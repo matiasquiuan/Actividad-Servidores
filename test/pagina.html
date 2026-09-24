@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>servidor</title>
+    <style>
+        .titulo{
+            font-family: Impact;
+            text-decoration: underline;
+            font-size: 45px;
+            text-align: center;
+            font-weight: bold;
+        }
+        body{
+            background-color: white;
+            text-align: center;
+        }
+        .contenedor-botones {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+        .boton {
+            width: 200px;
+            height: 200px;
+            color: black;
+            font-size: 23px;
+            border: 3px solid black;
+            border-radius: 100px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: normal;
+            text-decoration: none;
+        }
+        .lento {
+            background-color: red;
+        }
+
+        .normal {
+            background-color: yellow;   
+        }
+
+        .rapido {
+            background-color: green;
+        }
+
+        .emergencia {
+            background-color: orange;
+        }
+
+        .leyenda-modo {
+            font-size: 20px;
+        }
+
+        .leyenda-modo b {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titulo">SEMAFORO</h1> 
+    <div class="contenedor-botones">
+        <a href="/lento" class="boton lento">btn_txt1</a>
+        <a href="/normal" class="boton normal">btn_txt2</a>
+        <a href="/rapido" class="boton rapido">btn_txt3</a>
+        <a href="/emergencia" class="boton emergencia">btn_txt4</a>
+    </div>  
+    <span class="leyenda-modo">modo_txt</span>
+    
+</body>
+</html>
